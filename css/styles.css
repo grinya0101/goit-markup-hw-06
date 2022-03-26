@@ -311,6 +311,14 @@ a:focus .nav-contacts-icon-phone {
   background-color: var(--primary-text-color);
 }
 
+.buttom-close:focus::before {
+  background-color: var(--primary-text-color);
+}
+
+.buttom-close:focus::after {
+  background-color: var(--primary-text-color);
+}
+
 .form {
   padding: 40px;
   margin-left: auto;
@@ -345,7 +353,7 @@ a:focus .nav-contacts-icon-phone {
 }
 
 .form-field {
-  margin-bottom: 28px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -436,6 +444,11 @@ textarea:focus {
   background-image: url("../image/modal/check.svg");
   background-size: contain;
   background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+.checkbox:focus + .icon-stroke {
+  border-color: #2196f3;
 }
 
 .icon-stroke {
@@ -477,8 +490,8 @@ textarea:focus {
 
 .form-field-phone-2 {
   position: absolute;
-  top: 192px;
-  left: 56px;
+  top: 174px;
+  left: 55px;
   width: 13px;
   height: 13px;
 }
@@ -487,8 +500,8 @@ textarea:focus {
   position: absolute;
   width: 15px;
   height: 12px;
-  top: 279px;
-  left: 55px;
+  top: 243px;
+  left: 54px;
 }
 
 .form-link {
@@ -788,6 +801,7 @@ textarea:focus {
 .container-wrapper {
   margin-right: 70px;
 }
+
 .footer-link {
   display: inline-block;
   font-family: Raleway;
@@ -842,6 +856,10 @@ textarea:focus {
   align-items: baseline;
 }
 
+.footer-wrap {
+  margin-right: 93px;
+}
+
 .join {
   font-weight: 700;
   font-size: 14px;
@@ -849,7 +867,6 @@ textarea:focus {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-  margin-right: 154px;
 }
 
 .team-footer {

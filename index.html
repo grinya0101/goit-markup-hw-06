@@ -291,7 +291,7 @@
         
            <div class="footer-subscribe">
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-               <form action="" class="subscribe">
+               <form  class="subscribe">
                    <label for="mail" class=""></label>
                    <input type="text" class="footer-input" placeholder="E-mail" name="mail" id="mail">
                 <button type="submit" class="button-subscribe"><span class="subscribe-text">Подписаться<svg class="subscribe-icon">
@@ -306,6 +306,7 @@
     -- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <button data-modal-close class="buttom-close"></button>
             <form class="form form-modal">
                 <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
                 <div class="form-field">
@@ -324,7 +325,7 @@
                 </div>
                 <div class="form-field">
                     <label for="mail">Почта</label>
-                    <input class="form-name" type="email" name="mailto" id="mail">
+                    <input class="form-name" type="email" name="mailto">
                     <svg class="form-field-mail-2">
                         <use href="./image/modal/modal.svg#icon-mail-2"></use>
                     </svg>
@@ -332,7 +333,7 @@
 
                 
                 <div class="form-field">
-                    <label for="field-comment">Комментарий</label>
+                    <label for="comment">Комментарий</label>
                     <textarea class="comment" name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
                 </div>
                 
@@ -344,7 +345,7 @@
                 
                 <button type="submit" class="button-modal">Отправить</button>
             </form>
-            <button data-modal-close class="buttom-close"></button>
+            
         </div>
     </div>
     <script src="./js/modal.js"></script>
